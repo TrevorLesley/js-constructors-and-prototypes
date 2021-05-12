@@ -50,8 +50,12 @@ function Dog({ name, color, hungry, owner, status } = {}) {
   this.status = status;
 }
 
-Dog.prototype.status = function (status) {
-  this.status = status;
+// Dog.prototype. = function (status) {
+//   Dog.status = 'normal';
+// }
+
+Human.prototype.pet = function (dogName) {
+  dogName.status = 'happy';
 }
 
 
