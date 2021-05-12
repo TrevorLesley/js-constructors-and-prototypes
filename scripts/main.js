@@ -45,14 +45,16 @@ function Human({ name, cool } = {}) {
 function Dog({ name, color, hungry, owner, status } = {}) {
   this.name = name;
   this.color = color;
-  this.hungry = hungry;
+  this.hungry = true;
   this.owner = owner;
-  this.status = status;
+  this.status = 'normal';
 }
 
-// Dog.prototype. = function (status) {
-//   Dog.status = 'normal';
-// }
+
+
+// Dog.defineProperty(Dog, 'status', {
+//   status: 'normal',
+// });
 
 Human.prototype.pet = function (dogName) {
   dogName.status = 'happy';
