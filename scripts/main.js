@@ -42,10 +42,10 @@ function Human({ name, cool } = {}) {
   this.cool = cool;
 }
 
-function Dog({ name, color, hungry, owner, status } = {}) {
+function Dog({ name, color, hungry = true, owner, status } = {}) {
   this.name = name;
   this.color = color;
-  this.hungry = true;
+  this.hungry = hungry;
   this.owner = owner;
   this.status = 'normal';
 }
@@ -60,7 +60,9 @@ Human.prototype.pet = function (dogName) {
   dogName.status = 'happy';
 }
 
-
+Human.prototype.feed = function (dogName) {
+  dogName.hungry = false;
+}
 
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
