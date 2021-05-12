@@ -37,7 +37,7 @@ function expect(target) {
 //
 // ONLY ADD CODE TO THIS SECTION
 
-function Human({ name, cool } = {}) {
+function Human({ name, cool = false } = {}) {
   this.name = name;
   this.cool = cool;
 }
