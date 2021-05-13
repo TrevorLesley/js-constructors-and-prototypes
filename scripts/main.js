@@ -42,12 +42,12 @@ function Human({ name, cool = false } = {}) {
   this.cool = cool;
 }
 
-function Dog({ name, color, hungry = true, owner, status } = {}) {
+function Dog({ name, color, hungry = true, owner, status = 'normal' } = {}) {
   this.name = name;
   this.color = color;
   this.hungry = hungry;
   this.owner = owner;
-  this.status = 'normal';
+  this.status = status;
 }
 
 
